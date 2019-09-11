@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Fake it!{% endblock %}
+
+{% block body %}
+
+    <h1>{{ block('title') }}!</h1>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <button type="submit" class="btn btn-primary" id="fake_button">Fake it all!</button>
+    {{ form_end(form) }}
+
+    <div id="faked"></div>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        let faked = document.getElementById('faked');
+
+        document
+            .getElementById('fake_button')
+            .form
+            .addEventListener('submit', async function (e) {
+                e.preventDefault();
+
+                const type = document.getElementById('faker_type').value;
+                const language = document.getElementById('faker_language').value;
+                const how_many = document.getElementById('faker_how_many').value;
+
+                let response = await fetch('{{ path('fake_submit') }}', {
+                    method: 'post',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'Accept': 'text/html'
+                    },
+                    body: 'faker[type]='+type+'&faker[language]='+language+'&faker[how_many]='+how_many
+                });
+
+                faked.innerHTML = await response.text();
+            })
+        ;
+    </script>
+{% endblock %}
+
