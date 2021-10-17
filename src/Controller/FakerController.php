@@ -42,7 +42,7 @@ class FakerController extends AbstractController
 
             $type = $form->get('type')->getData();
 
-            $data = '';
+            $data = 'Results:<br>';
 
             $howMany = $form->get('how_many')->getData();
             if ($howMany < 0) {
