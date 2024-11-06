@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3912d1e0dc5e1d88e01c041f9cf4a02",
+    "content-hash": "6e282d4291f1a365d0e3e9731d4b711e",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2356,26 +2356,23 @@
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.27.0",
+            "version": "v1.31.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "7a6ff3f1959bb01aefccb463a0f2cd3d3d2fd936"
+                "reference": "60328e362d4c2c802a54fcbf04f9d3fb892b4cf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/7a6ff3f1959bb01aefccb463a0f2cd3d3d2fd936",
-                "reference": "7a6ff3f1959bb01aefccb463a0f2cd3d3d2fd936",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/60328e362d4c2c802a54fcbf04f9d3fb892b4cf8",
+                "reference": "60328e362d4c2c802a54fcbf04f9d3fb892b4cf8",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "php": ">=7.2"
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-main": "1.27-dev"
-                },
                 "thanks": {
                     "name": "symfony/polyfill",
                     "url": "https://github.com/symfony/polyfill"
@@ -2419,7 +2416,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.27.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.31.0"
             },
             "funding": [
                 {
@@ -2435,7 +2432,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-03T14:55:06+00:00"
+            "time": "2024-09-09T11:45:10+00:00"
         },
         {
             "name": "symfony/polyfill-php81",
@@ -2779,16 +2776,16 @@
         },
         {
             "name": "symfony/runtime",
-            "version": "v5.3.4",
+            "version": "v5.4.46",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/runtime.git",
-                "reference": "685a4a5491e25c7f2dd251d8fcca583b427ff290"
+                "reference": "242b4d773c004fa258e1b412f3f49fc2ac78353a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/runtime/zipball/685a4a5491e25c7f2dd251d8fcca583b427ff290",
-                "reference": "685a4a5491e25c7f2dd251d8fcca583b427ff290",
+                "url": "https://api.github.com/repos/symfony/runtime/zipball/242b4d773c004fa258e1b412f3f49fc2ac78353a",
+                "reference": "242b4d773c004fa258e1b412f3f49fc2ac78353a",
                 "shasum": ""
             },
             "require": {
@@ -2801,10 +2798,10 @@
             },
             "require-dev": {
                 "composer/composer": "^1.0.2|^2.0",
-                "symfony/console": "^4.4|^5",
-                "symfony/dotenv": "^5.1",
-                "symfony/http-foundation": "^4.4|^5",
-                "symfony/http-kernel": "^4.4|^5"
+                "symfony/console": "^4.4.30|^5.4.9|^6.0.9",
+                "symfony/dotenv": "^5.1|^6.0",
+                "symfony/http-foundation": "^4.4.30|^5.3.7|^6.0",
+                "symfony/http-kernel": "^4.4.30|^5.3.7|^6.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -2835,8 +2832,11 @@
             ],
             "description": "Enables decoupling PHP applications from global state",
             "homepage": "https://symfony.com",
+            "keywords": [
+                "runtime"
+            ],
             "support": {
-                "source": "https://github.com/symfony/runtime/tree/v5.3.4"
+                "source": "https://github.com/symfony/runtime/tree/v5.4.46"
             },
             "funding": [
                 {
@@ -2852,7 +2852,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-30T13:49:12+00:00"
+            "time": "2024-11-06T08:58:41+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -3711,5 +3711,5 @@
         "ext-iconv": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
